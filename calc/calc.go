@@ -37,6 +37,7 @@ func (c *calculator) divide(a, b float64) float64 {
 	if b == 0 {
 		//fmt.Println("на ноль делить тут нельзя")
 		fmt.Println("на ноль делить тут нельзя")
+		return 0
 	}
 	return a / b
 }
