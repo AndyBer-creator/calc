@@ -16,7 +16,7 @@ func TestCalculator(t *testing.T) {
 		{5, 3, "-", 2},
 		{4, 2, "*", 8},
 		{8, 2, "/", 4},
-		{5, 0, "/", 0}, // Проверка деления на ноль
+		{5, 0, "/", 0}, 
 	}
 
 	for _, test := range tests {
@@ -32,7 +32,7 @@ func TestDivideByZero(t *testing.T) {
 	a, b := 5.0, 0.0
 	got := c.Calculate(a, b, "/")
 
-	if got != 0 { // Ожидаем, что результат равен 0 при делении на ноль
+	if got != 0 { 
 		t.Errorf("Calculate(%v, %v, \"/\") = %v; want %v", a, b, got, 0)
 	}
 }
